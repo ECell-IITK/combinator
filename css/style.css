@@ -130,7 +130,7 @@ p.lead {
 }
 
 .font-oswald {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .font-darker {
@@ -870,7 +870,6 @@ section {
     color: #fff;
 }
 
-
 /* Main land */
 
 .land {
@@ -932,7 +931,7 @@ section {
     color: #ddd;
     font-size: 100px;
     font-weight: 600;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .upstart-logo .u {
@@ -949,7 +948,7 @@ section {
     background-color: #f39c12;
     padding: 0px 10px;
     font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     max-width: 400px;
     float: right;
     clear: both;
@@ -1120,9 +1119,10 @@ section {
 
 .service-box-change {
     padding: 40px 30px;
+    margin: 30px 15px;
     border-radius: 10px;
     min-height: 650px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .service-desc-change {
@@ -1132,11 +1132,24 @@ section {
 }
 
 .service-desc-change img {
-    width: 90%;
+    width: 100%;
     object-fit: contain;
-    margin-bottom: -5vw;
+    margin-bottom: -120px;
     position: relative;
-    top: -10vw;
+    top: -150px;
+}
+
+@media (max-width: 992px) {
+    .service-desc-change img {
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: -50px;
+        position: relative;
+        top: -100px;
+    }
+    .box-part {
+        margin-top: 50px !important;
+    }
 }
 
 .service-box h5 {
@@ -2024,7 +2037,6 @@ footer .social-widget ul.team-social li a {
     background: #ffcc00;
 }
 
-
 /* Google Map */
 
 #map {
@@ -2035,7 +2047,6 @@ footer .social-widget ul.team-social li a {
     transition: all 0.7s;
 }
 
-
 /* Open and Close Styles */
 
 .close-map {
@@ -2045,7 +2056,6 @@ footer .social-widget ul.team-social li a {
 .open-map {
     height: 500px;
 }
-
 
 /* Open and Close Button Styles */
 
@@ -2094,7 +2104,6 @@ a.gmap-btn:focus {
     color: #fff;
 }
 
-
 /* Google Map Div */
 
 #map #google-map {
@@ -2116,7 +2125,6 @@ a.gmap-btn:focus {
 .open-map #google-map {
     opacity: 1;
 }
-
 
 /* blink btn */
 
@@ -2167,7 +2175,7 @@ a.gmap-btn:focus {
 }
 
 .asso-cat h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
 }
 
@@ -2225,7 +2233,6 @@ figcaption {
     }
 }
 
-
 /* --- demo icons --- */
 
 #demoicon [class^="pe-7s-"],
@@ -2260,7 +2267,6 @@ figcaption {
     margin-top: 25px;
     display: block;
 }
-
 
 /* --- button --- */
 
@@ -2376,7 +2382,7 @@ a.btn:focus {
 }
 
 #partners {
-    background: #FFFAF2;
+    background: #fffaf2;
 }
 
 .partner-div {
@@ -2389,10 +2395,15 @@ a.btn:focus {
     padding: 10px;
     width: 20%;
     margin: auto;
-    background: #FFA500;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    background: #ffa500;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12),
+        0px 1px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 8px;
+}
+
+.height-100 {
+    height: 100%;
 }
 
 .flow-box {
@@ -2402,7 +2413,8 @@ a.btn:focus {
     padding: 15px;
     background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);
     color: white;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12),
+        0px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
 
@@ -2412,15 +2424,29 @@ a.btn:focus {
     position: relative;
     left: -12%;
     font-family: "Lato";
-    min-height: 35rem !important;
+    min-height: 38rem !important;
     color: black;
     font-size: 15px;
     padding: 30px 12px;
     line-height: 25px;
     background: white;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.service-button {
+    background: #47b2e4;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.service-button:hover {
+    background: #209dd8;
 }
 
 .flow-box-content img {
@@ -2429,7 +2455,7 @@ a.btn:focus {
 }
 
 .flow-box-content::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 50%;
     height: 4px;
@@ -2450,7 +2476,7 @@ a.btn:focus {
 }
 
 .flow {
-    padding: 0px 25px 60px 25px;
+    padding: 0px 15px 60px 15px;
     justify-content: center;
 }
 
@@ -2460,6 +2486,12 @@ a.btn:focus {
 
 .list-inlin-item br {
     display: block;
+}
+
+@media ((min-width: 992px) and (max-width: 1200px)) {
+    .container {
+        width: 1020px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2506,7 +2538,7 @@ a.btn:focus {
     }
 }
 
-@media (max-width:266px) {
+@media (max-width: 266px) {
     .flow-box-content {
         padding: 0;
     }
@@ -2516,15 +2548,13 @@ a.btn:focus {
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .img-flow {
         display: none;
     }
 }
 
-
 /* Media queries */
-
 
 /* @media (min-width: 767px) {
     .navbar {
@@ -2752,7 +2782,8 @@ a.btn:focus {
 }
 
 #biz a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     letter-spacing: 3px;
 }
 
@@ -2766,7 +2797,8 @@ a.btn:focus {
 }
 
 #socha a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     letter-spacing: 3px;
 }
 
@@ -2781,7 +2813,6 @@ a.btn:focus {
     background-color: #000;
     z-index: 1000000000000000;
 }
-
 
 /* ==========================================================================
    Loader
@@ -2801,8 +2832,8 @@ a.btn:focus {
     content: "";
     z-index: -1;
     position: absolute;
-    top: calc(50% - 4em/2);
-    left: calc(50% - 4em/2);
+    top: calc(50% - 4em / 2);
+    left: calc(50% - 4em / 2);
     display: block;
     width: 4em;
     height: 4em;
@@ -2847,10 +2878,8 @@ a.btn:focus {
     height: 2.33em;
     fill: rgb(255, 145, 0);
     stroke: rgb(255, 145, 0);
-    ;
     stroke-width: 1;
 }
-
 
 /*
    Loader animations
@@ -2893,7 +2922,6 @@ a.btn:focus {
         transform: scale(1);
     }
 }
-
 
 /* dropdown menu -- navbar -- regionals */
 
@@ -2945,7 +2973,6 @@ a.dropbtn {
     text-align: center;
 }
 
-
 /* coming soon  */
 
 .coming-soon {
@@ -2956,9 +2983,7 @@ a.dropbtn {
     padding-top: 200px;
 }
 
-
 /* Timeline */
-
 
 /* Used In Timeline and Competition Structure */
 
@@ -2990,7 +3015,7 @@ a.dropbtn {
 }
 
 .timeline::before {
-    content: '';
+    content: "";
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -3012,7 +3037,7 @@ a.dropbtn {
 }
 
 .timeline::after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -3080,7 +3105,7 @@ a.dropbtn {
 
 .timeline__entry::before,
 .timeline__entry::after {
-    content: ' ';
+    content: " ";
     position: absolute;
     margin-top: 1rem;
 }
@@ -3118,7 +3143,6 @@ a.dropbtn {
     line-height: 1.6;
 }
 
-
 /* Accordions */
 
 .accordion-container {
@@ -3129,7 +3153,7 @@ a.dropbtn {
 }
 
 .accordion {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     background-color: #555;
     color: #f39c12;
     cursor: pointer;
@@ -3169,7 +3193,7 @@ a.dropbtn {
 }
 
 .accordion:after {
-    content: '\02795';
+    content: "\02795";
     font-size: 13px;
     color: #f39c12 !important;
     float: right;
@@ -3180,7 +3204,6 @@ a.dropbtn {
     content: "\2796";
     color: #f39c12 !important;
 }
-
 
 /* // Extra for FAQs Sectio */
 
@@ -3216,7 +3239,6 @@ a.dropbtn {
         border-radius: 8px 8px 0px 0px;
     }
 }
-
 
 /*Nationals Results  */
 
@@ -3267,14 +3289,11 @@ a.dropbtn {
 
     box-sizing: border-box;
 
-
     background-color: #111;
     color: #fff;
 }
 
 #toast #desc {
-
-
     color: #fff;
 
     padding: 16px;
@@ -3285,8 +3304,10 @@ a.dropbtn {
 
 #toast.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 2s,
+        fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s,
+        fadeout 0.5s 4.5s;
 }
 
 @-webkit-keyframes fadein {
@@ -3315,41 +3336,41 @@ a.dropbtn {
 
 @-webkit-keyframes expand {
     from {
-        min-width: 50px
+        min-width: 50px;
     }
 
     to {
-        min-width: 350px
+        min-width: 350px;
     }
 }
 
 @keyframes expand {
     from {
-        min-width: 50px
+        min-width: 50px;
     }
 
     to {
-        min-width: 350px
+        min-width: 350px;
     }
 }
 
 @-webkit-keyframes stay {
     from {
-        min-width: 350px
+        min-width: 350px;
     }
 
     to {
-        min-width: 350px
+        min-width: 350px;
     }
 }
 
 @keyframes stay {
     from {
-        min-width: 350px
+        min-width: 350px;
     }
 
     to {
-        min-width: 350px
+        min-width: 350px;
     }
 }
 
@@ -3565,7 +3586,7 @@ a.dropbtn {
     padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
     background: #47b2e4;
     border: 0;
     padding: 12px 34px;
@@ -3574,7 +3595,7 @@ a.dropbtn {
     border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
     background: #209dd8;
 }
 
